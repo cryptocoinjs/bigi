@@ -1,0 +1,32 @@
+{
+  "name": "cryptocoin-bigint",
+  "version": "0.0.1",
+  "description": "Big integers.",
+  "keywords": [
+    "cryptography",
+    "math",
+    "bitcoin",
+    "arbitrary",
+    "precision",
+    "arithmetic",
+    "big",
+    "integer",
+    "int",
+    "number",
+    "biginteger",
+    "bigint",
+    "bignumber",
+    "decimal",
+    "float"
+  ],
+  "devDependencies": {
+    "mocha": "1.*",
+    "terst": "0.0.1"
+  },
+  "repository": {
+    "url": "https://github.com/cryptocoinjs/bigint",
+    "type": "git"
+  },
+  "main": "./lib/bigint.js",
+  "dependencies": {}
+}

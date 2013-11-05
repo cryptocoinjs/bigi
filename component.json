@@ -1,0 +1,28 @@
+{
+  "name": "ripemd160",
+  "version": "0.0.1",
+  "description": "Big integers.",
+  "keywords": [
+    "cryptography",
+    "math",
+    "bitcoin",
+    "arbitrary",
+    "precision",
+    "arithmetic",
+    "big",
+    "integer",
+    "int",
+    "number",
+    "biginteger",
+    "bigint",
+    "bignumber",
+    "decimal",
+    "float"
+  ],
+  "repo": "cryptocoinjs/bigint",
+  "scripts": [
+    "./lib/bigint.js"
+  ],
+  "main": "./lib/bigint.js",
+  "dependencies": {}
+}
