@@ -3,7 +3,6 @@ bigint
 
 JavaScript library to manipulate big integers. Package of `jsbn` made by [Tom Wu](http://www-cs-students.stanford.edu/~tjw/jsbn/)
 
-AMD/CommonJS compatible.
 
 
 Install

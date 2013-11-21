@@ -1,6 +1,6 @@
 {
   "name": "cryptocoin-bigint",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Big integers.",
   "keywords": [
     "cryptography",
@@ -24,8 +24,7 @@
     ".DS_Store",
     "references"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "repo": "https://github.com/cryptocoinjs/bigint",
   "main": "./lib/bigint.js"
 }
