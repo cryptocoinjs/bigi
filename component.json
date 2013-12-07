@@ -1,5 +1,5 @@
 {
-  "name": "ripemd160",
+  "name": "bigi",
   "version": "0.1.0",
   "description": "Big integers.",
   "keywords": [
@@ -19,10 +19,10 @@
     "decimal",
     "float"
   ],
-  "repo": "cryptocoinjs/bigint",
+  "repo": "cryptocoinjs/bigi",
   "scripts": [
     "./lib/bigint.js"
   ],
-  "main": "./lib/bigint.js",
+  "main": "./lib/bigi.js",
   "dependencies": {}
 }

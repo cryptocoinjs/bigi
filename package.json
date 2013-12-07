@@ -1,5 +1,5 @@
 {
-  "name": "cryptocoin-bigint",
+  "name": "bigi",
   "version": "0.1.0",
   "description": "Big integers.",
   "keywords": [
@@ -24,9 +24,9 @@
     "terst": "0.0.1"
   },
   "repository": {
-    "url": "https://github.com/cryptocoinjs/bigint",
+    "url": "https://github.com/cryptocoinjs/bigi",
     "type": "git"
   },
-  "main": "./lib/bigint.js",
+  "main": "./lib/bigi.js",
   "dependencies": {}
 }
