@@ -1,8 +1,9 @@
-bigint
+bigi
 ======
 
 JavaScript library to manipulate big integers. Package of `jsbn` made by [Tom Wu](http://www-cs-students.stanford.edu/~tjw/jsbn/)
 
+Pronounced either like "big I" or "biggie".
 
 
 Install
@@ -10,22 +11,22 @@ Install
 
 ### Node.js/Browserify
 
-    npm install --save cryptocoin-bigint
+    npm install --save bigi
 
 ### Component
 
-    component install cryptocoinjs/bigint
+    component install cryptocoinjs/bigi
 
 
 ### Bower
 
-    bower install cryptocoin-bigint
+    bower install bigi
 
 
 ### Script
 
 ```html
-<script src="/path/to/bigint.js"></script>
+<script src="/path/to/bigi.js"></script>
 ```
 
 
