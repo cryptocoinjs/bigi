@@ -5,6 +5,8 @@ JavaScript library to manipulate big integers. Package of `jsbn` made by [Tom Wu
 
 Pronounced either like "big I" or "biggie".
 
+**Important Note**: Please don't use this library for actual big integer operations. We may aggressively prune the library so that it just supports operations necessary for CryptoCoinJS.
+
 
 Install
 -------
@@ -37,11 +39,13 @@ Usage
 
 
 
-Other
------
+References
+----------
 - This library looks promising: https://github.com/MikeMcl/bignumber.js
 - This follows the official `jsbn`: https://github.com/jasondavies/jsbn
-
+- http://www.joseprio.com/blog/2013/04/27/biginteger-libraries-for-js/
+- https://groups.google.com/forum/#!topic/bitcoinhackers/5IlDcTq51Y8
+- https://github.com/dominictarr/math-buffer
 
 
 License
@@ -51,7 +55,6 @@ Any additional modifications:
 
 (BSD License)
 
-Copyright 2013, JP Richardson  <jprichardson@gmail.com>
 
 
 This software is covered under the following copyright:
