@@ -28,5 +28,8 @@
     "type": "git"
   },
   "main": "./lib/bigi.js",
+  "scripts": {
+    "test": "mocha -- --reporter list test/*.js"
+  },
   "dependencies": {}
 }
