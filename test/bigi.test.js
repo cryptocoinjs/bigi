@@ -29,16 +29,6 @@ describe('BigInteger', function() {
         assert.equal(bi.toHex(32), f.hexPadded)
       })
     })
-
-    it('throws on non-finite padding value', function() {
-        var bi = new BigInteger('1')
-
-        assert.throws(function() { bi.toHex({}) })
-        assert.throws(function() { bi.toHex([]) })
-        assert.throws(function() { bi.toHex('') })
-        assert.throws(function() { bi.toHex(0 / 0) })
-        assert.throws(function() { bi.toHex(1 / 0) })
-    })
   })
 })
 
