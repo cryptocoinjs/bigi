@@ -1,3 +1,7 @@
+/*******************************
+ * TESTS for conversion methods
+ *******************************/
+
 var assert = require('assert')
 var BigInteger = require('../lib/bigi')
 var fixtures = require('./fixtures/bigi')
