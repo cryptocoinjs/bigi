@@ -3,7 +3,7 @@
  *******************************/
 
 var assert = require('assert')
-var BigInteger = require('../lib/bigi')
+var BigInteger = require('../')
 var fixtures = require('./fixtures/bigi')
 
 describe('BigInteger', function() {

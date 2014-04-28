@@ -27,7 +27,7 @@
     "url": "https://github.com/cryptocoinjs/bigi",
     "type": "git"
   },
-  "main": "./lib/bigi.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "mocha -- --reporter list test/*.js"
   },
