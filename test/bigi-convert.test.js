@@ -9,7 +9,12 @@ var fixtures = require('./fixtures/bigi')
 describe('BigInteger', function() {
   describe('fromBuffer/fromHex', function() {
     it('should match the test vectors', function() {
+      function fromHex(s) {
+        return new BigInteger(s, 16)
+      }
+
       fixtures.valid.forEach(function(f) {
+        assert.equal(BigInteger.fromHex(f.hex).toString(), fromHex(f.hex).toString())
         assert.equal(BigInteger.fromHex(f.hex).toString(), f.dec)
         assert.equal(BigInteger.fromHex(f.hexPadded).toString(), f.dec)
       })
