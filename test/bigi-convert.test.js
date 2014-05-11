@@ -15,8 +15,8 @@ describe('BigInteger', function() {
 
       fixtures.valid.forEach(function(f) {
         assert.equal(BigInteger.fromHex(f.hex).toString(), fromHex(f.hex).toString())
-        assert.equal(BigInteger.fromHex(f.hex).toString(), f.dec)
-        assert.equal(BigInteger.fromHex(f.hexPadded).toString(), f.dec)
+        assert.equal(BigInteger.fromHex(f.hex).toString(), f.decp)
+        assert.equal(BigInteger.fromHex(f.hexPadded).toString(), f.decp)
       })
     })
 
