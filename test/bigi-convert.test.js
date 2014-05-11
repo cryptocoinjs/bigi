@@ -7,14 +7,31 @@ var BigInteger = require('../')
 var fixtures = require('./fixtures/bigi')
 
 describe('BigInteger', function() {
-  describe('fromBuffer/fromHex', function() {
+  describe('fromByteArrayUnsigned', function() {
     it('should match the test vectors', function() {
-      function fromHex(s) {
-        return new BigInteger(s, 16)
-      }
-
       fixtures.valid.forEach(function(f) {
-        assert.equal(BigInteger.fromHex(f.hex).toString(), fromHex(f.hex).toString())
+        var byteArray = Array.prototype.slice.call(new Buffer(f.hex, 'hex'))
+
+        assert.equal(BigInteger.fromByteArrayUnsigned(byteArray).toString(), f.decp)
+      })
+    })
+  })
+
+  describe('fromBuffer', function() {
+    it('should match the test vectors', function() {
+      fixtures.valid.forEach(function(f) {
+        var buffer = new Buffer(f.hex, 'hex')
+        var bufferPadded = new Buffer(f.hexPadded, 'hex')
+
+        assert.equal(BigInteger.fromBuffer(buffer).toString(), f.decp)
+        assert.equal(BigInteger.fromBuffer(bufferPadded).toString(), f.decp)
+      })
+    })
+  })
+
+  describe('fromHex', function() {
+    it('should match the test vectors', function() {
+      fixtures.valid.forEach(function(f) {
         assert.equal(BigInteger.fromHex(f.hex).toString(), f.decp)
         assert.equal(BigInteger.fromHex(f.hexPadded).toString(), f.decp)
       })
@@ -25,6 +42,17 @@ describe('BigInteger', function() {
         assert.throws(function() {
           BigInteger.fromHex(f.string)
         })
+      })
+    })
+  })
+
+  describe('toByteArrayUnsigned', function() {
+    it('should match the test vectors', function() {
+      fixtures.valid.forEach(function(f) {
+        var byteArray = BigInteger.fromHex(f.hex).toByteArrayUnsigned()
+        var hex = new Buffer(byteArray).toString('hex')
+
+        assert.equal(hex, f.hex)
       })
     })
   })
