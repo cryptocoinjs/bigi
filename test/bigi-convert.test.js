@@ -67,7 +67,27 @@ describe('BigInteger', function() {
       })
     })
   })
+
+  describe('fromDERInteger', function() {
+    it('should match the test vectors', function() {
+      fixtures.valid.forEach(function(f) {
+        var bi = BigInteger.fromDERInteger(new Buffer(f.DER, 'hex'))
+
+        assert.equal(bi.toString(), f.dec)
+      })
+    })
+  })
+
+  describe('toDERInteger', function() {
+    it('should match the test vectors', function() {
+      fixtures.valid.forEach(function(f) {
+        var bi = new BigInteger(f.dec)
+        var ba = new Buffer(bi.toDERInteger())
+
+        assert.equal(ba.toString('hex'), f.DER)
+      })
+    })
+  })
 })
 
 module.exports = BigInteger
-
