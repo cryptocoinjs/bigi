@@ -1,3 +1,11 @@
+1.1.0 / 2014-05-13
+-------------------
+* extend test data and include DER integers
+* fix *ByteArrayUnsigned implementation
+* add tests for *ByteArrayUnsigned
+* rename toByteArraySigned -> toDERInteger
+* rework toBuffer/toHex for performance
+
 1.0.0 / 2014-04-28
 ------------------
 * added methods `toBuffer()`, `fromBuffer()`, `toHex()`, `fromHex()`, #1
