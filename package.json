@@ -20,7 +20,7 @@
     "float"
   ],
   "devDependencies": {
-    "mocha": "1.*"
+    "mocha": "1.18.2"
   },
   "repository": {
     "url": "https://github.com/cryptocoinjs/bigi",
@@ -28,7 +28,8 @@
   },
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha -- --reporter list test/*.js"
+    "test": "./node_modules/.bin/_mocha -- test/*.js",
+    "jshint": "./node_modules/.bin/jshint --config jshint.json lib/*.js ; true"
   },
   "dependencies": {}
 }

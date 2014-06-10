@@ -4,9 +4,9 @@
 
 var assert = require('assert')
 var BigInteger = require('../')
-var fixtures = require('./fixtures/bigi')
+var fixtures = require('./fixtures/convert')
 
-describe('BigInteger', function() {
+describe('Convert', function() {
   describe('fromByteArrayUnsigned', function() {
     it('should match the test vectors', function() {
       fixtures.valid.forEach(function(f) {
@@ -89,5 +89,3 @@ describe('BigInteger', function() {
     })
   })
 })
-
-module.exports = BigInteger
