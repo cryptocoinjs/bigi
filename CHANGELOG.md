@@ -1,7 +1,9 @@
 1.2.0 / 2014-06-10
 ------------------
 * removed semicolons, cleanup, added basic tests, jshint [Daniel Cousens](https://github.com/cryptocoinjs/bigi/pull/9)
-* 
+* added TravisCI
+* added Coveralls
+* added Testling
 
 1.1.0 / 2014-05-13
 -------------------

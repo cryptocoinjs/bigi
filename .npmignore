@@ -1,6 +1,4 @@
 .gitignore
 test/
 .DS_Store
-references/
-bower.json
-component.json
+.travis.yml
