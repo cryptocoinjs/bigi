@@ -28,7 +28,8 @@
   },
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha -- --reporter list test/*.js"
+    "test": "mocha -- --reporter list test/*.js",
+    "jshint": "./node_modules/.bin/jshint --config jshint.json lib/*.js ; true"
   },
   "dependencies": {}
 }
