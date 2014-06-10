@@ -7,6 +7,11 @@ var assert = require('assert')
 var BigInteger = require('../')
 
 describe('BigInteger', function () {
+  it('should work without new', function() {
+    var bi = BigInteger('12345')
+    assert.equal(bi.toString(10), '12345')
+  })
+
   it('should work with String input', function () {
     assert.equal(new BigInteger('12345').toString(16), '3039')
     assert.equal(new BigInteger('29048849665247').toString(16), '1a6b765d8cdf')
