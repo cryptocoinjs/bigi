@@ -1,3 +1,7 @@
+1.2.1 / 2014-07-03
+-----------------
+* added duck-typed BigInteger.isBigInteger(), #12
+
 1.2.0 / 2014-06-10
 ------------------
 * removed semicolons, cleanup, added basic tests, jshint [Daniel Cousens](https://github.com/cryptocoinjs/bigi/pull/9)
