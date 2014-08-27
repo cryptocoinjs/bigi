@@ -48,6 +48,20 @@ describe('BigInteger', function () {
     assert.equal(new BigInteger('8023456789', 16).bitLength(), 40)
   })
 
+  it('should return proper byteLength', function () {
+    assert.equal(new BigInteger('0').byteLength(), 0)
+    assert.equal(new BigInteger('1', 16).byteLength(), 0)
+    assert.equal(new BigInteger('2', 16).byteLength(), 0)
+    assert.equal(new BigInteger('3', 16).byteLength(), 0)
+    assert.equal(new BigInteger('4', 16).byteLength(), 0)
+    assert.equal(new BigInteger('8', 16).byteLength(), 0)
+    assert.equal(new BigInteger('10', 16).byteLength(), 0)
+    assert.equal(new BigInteger('100', 16).byteLength(), 1)
+    assert.equal(new BigInteger('123456', 16).byteLength(), 2)
+    assert.equal(new BigInteger('123456789', 16).byteLength(), 4)
+    assert.equal(new BigInteger('8023456789', 16).byteLength(), 5)
+  })
+
   it('should add numbers', function () {
     assert.equal(new BigInteger('14').add(new BigInteger('26')).toString(16), '28')
     var k = new BigInteger('1234', 16)
