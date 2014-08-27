@@ -1,3 +1,7 @@
+1.3.0 / 2014-08-27
+------------------
+* added method `byteLength()`, #13
+
 1.2.1 / 2014-07-03
 -----------------
 * added duck-typed BigInteger.isBigInteger(), #12
