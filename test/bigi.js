@@ -186,4 +186,14 @@ describe('BigInteger', function () {
     var b = a.modInverse(p192)
     assert.equal(a.multiply(b).mod(p192).toString(16), '1')
   })
+
+  it('should calculate if probable prime', function () {
+    // not prime
+    var a = new BigInteger('561')
+    assert.ok(!a.isProbablePrime())
+
+    // not prime, but `true` returned anyways because test is probabilistic
+    var p = new BigInteger('25326001')
+    assert.ok(p.isProbablePrime())
+  })
 })
