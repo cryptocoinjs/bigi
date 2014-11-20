@@ -1,3 +1,8 @@
+1.4.0 / 2014-11-20
+------------------
+- added `jshint.json` and `benchmark/` to `.npmignore`
+- added `isProbablePrime()` https://github.com/cryptocoinjs/bigi/pull/16
+
 1.3.0 / 2014-08-27
 ------------------
 * added method `byteLength()`, #13
