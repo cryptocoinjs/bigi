@@ -2,3 +2,5 @@
 test/
 .DS_Store
 .travis.yml
+benchmark/
+jshint.json
