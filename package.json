@@ -20,10 +20,11 @@
     "float"
   ],
   "devDependencies": {
-     "mocha": "^1.20.1",
-    "jshint": "^2.5.1",
     "coveralls": "^2.10.0",
-    "istanbul": "^0.2.11"
+    "istanbul": "^0.2.11",
+    "jshint": "^2.5.1",
+    "mocha": "^1.20.1",
+    "mochify": "^2.1.0"
   },
   "repository": {
     "url": "https://github.com/cryptocoinjs/bigi",
@@ -31,6 +32,7 @@
   },
   "main": "./lib/index.js",
   "scripts": {
+    "browser-test": "./node_modules/.bin/mochify --wd -R spec",
     "test": "./node_modules/.bin/_mocha -- test/*.js",
     "jshint": "./node_modules/.bin/jshint --config jshint.json lib/*.js ; true",
     "unit": "./node_modules/.bin/mocha",
