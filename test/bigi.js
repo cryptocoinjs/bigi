@@ -187,6 +187,15 @@ describe('BigInteger', function () {
     assert.equal(a.multiply(b).mod(p192).toString(16), '1')
   })
 
+  it('should throw on modInverse of 0', function () {
+    var p = new BigInteger('257')
+    var a = new BigInteger('0')
+
+    assert.throws(function () {
+      a.modInverse(p)
+    }, /division by zero/)
+  })
+
   it('should calculate if probable prime', function () {
     // not prime
     var a = new BigInteger('561')
