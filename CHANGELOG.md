@@ -1,3 +1,7 @@
+1.4.1 / 2015-08-26
+-------------------
+- bugfix: throw if `modInverse` with zero. https://github.com/cryptocoinjs/bigi/pull/21
+
 1.4.0 / 2014-11-20
 ------------------
 - added `jshint.json` and `benchmark/` to `.npmignore`
