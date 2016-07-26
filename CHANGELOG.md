@@ -1,3 +1,8 @@
+Unreleased
+----------
+### fixes
+- [#25] `modInverse` should return positive
+
 1.4.1 / 2015-08-26
 -------------------
 - bugfix: throw if `modInverse` with zero. https://github.com/cryptocoinjs/bigi/pull/21

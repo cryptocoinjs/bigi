@@ -196,6 +196,13 @@ describe('BigInteger', function () {
     }, /division by zero/)
   })
 
+  it('modInverse should always return a positive number', function () {
+    var z = new BigInteger('cc61934972bba029382f0bef146b228ca15d54f7e38b6cd5f6b382398b7a97a8', 16)
+    var p = new BigInteger('fffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f', 16)
+    var zInv = z.modInverse(p)
+    assert.strictEqual(zInv.signum(), 1, 'zInv should be positive')
+  })
+
   it('should calculate if probable prime', function () {
     // not prime
     var a = new BigInteger('561')
